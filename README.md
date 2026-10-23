@@ -1,57 +1,85 @@
-### 🛡️THREAT HUNTING TEAM (THT)🔍
+# 🛡️ Threat Hunting Team (THT)
+
+**Cyber Threat Intelligence · Threat Detection Engineering · Threat Hunting**
 
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-Mc1Ranger-blue)](https://www.virustotal.com/gui/user/Mc1Ranger)
-
-[![Maltego TRX](https://img.shields.io/badge/Maltego%20TRX-Transforms-yellow)](https://github.com/MaltegoTech/maltego-trx)
 [![Community](https://img.shields.io/badge/Community-RedTeamRD.org-blue.svg)](https://redteamrd.org)
 [![Conference](https://img.shields.io/badge/Event-HackConRD.org-red.svg)](https://hackconrd.org)
-[![MITRE ATT&CK](https://img.shields.io/badge/Mapped%20to-MITRE%20ATT%26CK-orange.svg)](https://attack.mitre.org)
-[![MITRE D3FEND](https://img.shields.io/badge/MITRE%20D3FEND-Defense%20Framework-purple)](https://d3fend.mitre.org/resources/)
-[![ADHD Project](https://img.shields.io/badge/ADHD%20Project-Active%20Defense-black)](https://adhdproject.github.io/#!index.md)
-[![CISA Alerts](https://img.shields.io/badge/CISA%20Alerts-Warning-red)](https://www.cisa.gov/stopransomware/alerts)
-[![NIST Cybersecurity News](https://img.shields.io/badge/NIST%20Cyber%20News-Important-blue)](https://csrc.nist.gov/news)
-[![FBI Cyber News](https://img.shields.io/badge/FBI%20Cyber%20News-Security-critical)](https://www.fbi.gov/investigate/cyber/news)
-[![ENISA Threats](https://img.shields.io/badge/ENISA%20Threat%20Intel-Threats-orange)](https://www.enisa.europa.eu/news?f%5B0%5D=topics%3A526#contentList)
-[![INTERPOL Cybercrime](https://img.shields.io/badge/INTERPOL%20Cybercrime-Response-green)](https://www.interpol.int/Crimes/Cybercrime/Cybercrime-threat-response)
-[![NCSC Threat Reports](https://img.shields.io/badge/NCSC%20Threat%20Reports-Intel-darkblue)](https://www.ncsc.gov.uk/section/keep-up-to-date/threat-reports?q=&defaultTypes=report&sort=date%2Bdesc)
-[![CISA Cybersecurity Advisories](https://img.shields.io/badge/CISA%20Cybersecurity-Advisories-red)](https://www.cisa.gov/news-events/cybersecurity-advisories)
-[![SentinelOne Crimeware](https://img.shields.io/badge/SentinelOne-Crimeware-purple)](https://www.sentinelone.com/labs/category/crimeware/)
-[![SentinelOne Security Intelligence](https://img.shields.io/badge/SentinelOne-Security%20Intel-black)](https://www.sentinelone.com/labs/category/security-intelligence/)
+[![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-Reference-orange.svg)](https://attack.mitre.org)
+[![MITRE D3FEND](https://img.shields.io/badge/MITRE%20D3FEND-Reference-purple)](https://d3fend.mitre.org/resources/)
 
-## 🔥 About the Project
-This repository is a collaborative effort by **RedTeamRD.org**, aimed at strengthening **Cyber Threat Intelligence (CTI)** and **Threat Hunting** in corporate, government, and community environments.  
-**We are a group of people passionate about Cyber ​​Threat Intelligence (CTI).  
-**We do not focus on specific threat actors, we are not motivated by money, but we do want to help people who are dedicated to this discipline.  
-**We are motivated by CTF, and the art of understanding how the adversary combines TTPs to orchestrate sophisticated attacks.  
+## About the project
 
+THT is a collaborative initiative by **RedTeamRD.org** to strengthen Cyber Threat Intelligence and Threat Hunting across corporate, government, and community environments. We share an interest in CTFs and in understanding how adversaries combine tactics, techniques, and procedures (TTPs).
 
-📢 **Objective:** Share tools, detection rules, and analyses to improve threat detection, prevention, and response.
+Our objective is to share resources, detection ideas, tools, and analysis that help defenders investigate threats and improve detection and response. The research scope is not limited to a specific threat actor.
 
----
+## Repository contents
 
-## 📌 Repository Contents
-📊 **Indicators of Compromise (IoCs)** → Regularly updated and categorized.  
-🔍 **Detection Rules for SentinelOne** → Based on real-world TTPs and MITRE ATT&CK.  
-🛠️ **Tools & Scripts** → Automate threat analysis and response.  
-📖 **Use Cases & Forensic Analysis** → In-depth reports on cyber threats.  
-🎓 **Educational Resources** → Enhance your Threat Intelligence & Hunting skills.  
+The repository currently provides introductory documentation and visual resource collections:
 
----
+- [Local tools — part 1](Tools%20local%201.png) and [part 2](Tools%20local%202.png)
+- [Online tools — part 1](Tools%20oline1.png) and [part 2](Tools%20oline2.png)
+- [Other platforms](Other%20Platforms.png)
 
-## 🚀 How to Contribute?
-💡 **Fork** this repository and submit a Pull Request with your contribution.  
-👥 Share your **IoCs, detection rules, and threat research**.  
+The intended contribution areas include contextualized IoCs, SentinelOne detection and hunting examples, analysis utilities, forensic use cases, and educational material. These are development directions; availability and validation should be assessed per artifact.
 
----
+## From intelligence to detection
 
-## 📡 Connect with the Community  
-🌐 **[RedTeamRD.org](https://redteamrd.org)** – Red Team & Cybersecurity community in LATAM.  
-🎤 **[HackConRD.org](https://hackconrd.org)** – Annual Offensive & Defensive Security conference.  
-🔗 **Join our Discord/Twitter for updates**.  
+```text
+Threat context → Hunt hypothesis → Required telemetry → Detection logic → Validation → Tuning
+```
 
-⚔️ *The best defense is a strong offense. Let's hunt threats together!* 🔥
+For each detection or hunt contribution, document:
 
-## 📸  
+1. **Objective:** the behavior being investigated and its defensive value.
+2. **Data requirements:** telemetry sources, fields, product versions, and assumptions.
+3. **ATT&CK mapping:** relevant techniques or sub-techniques, with reasoning.
+4. **Validation:** controlled test procedure and expected evidence.
+5. **Tuning:** likely false positives, exclusions, and coverage limitations.
+6. **Provenance:** public references and relevant observation dates.
+
+SentinelOne queries and other product-specific examples should identify the applicable query language, schema, and tested environment. Treat unvalidated examples as research material.
+
+## How to contribute
+
+- Fork the repository and submit a focused pull request.
+- Explain the use case, data requirements, validation, and limitations.
+- Share only material you are authorized to publish. Use public, synthetic, or sanitized examples.
+- Exclude credentials, client identifiers, personal information, private infrastructure, and confidential telemetry.
+- Include context and provenance for IoCs, and distinguish observations from hypotheses.
+
+Corrections, validation results, hunting ideas, and documentation improvements are welcome.
+
+## Reference resources
+
+### Frameworks and tooling
+
+- [MITRE ATT&CK](https://attack.mitre.org)
+- [MITRE D3FEND](https://d3fend.mitre.org/resources/)
+- [Maltego TRX](https://github.com/MaltegoTech/maltego-trx)
+- [ADHD Project](https://adhdproject.github.io/#!index.md)
+
+### Advisories and threat research
+
+- [CISA Alerts](https://www.cisa.gov/stopransomware/alerts) and [Cybersecurity Advisories](https://www.cisa.gov/news-events/cybersecurity-advisories)
+- [NIST Cybersecurity News](https://csrc.nist.gov/news)
+- [FBI Cyber News](https://www.fbi.gov/investigate/cyber/news)
+- [ENISA Threats](https://www.enisa.europa.eu/news?f%5B0%5D=topics%3A526#contentList)
+- [INTERPOL Cybercrime Threat Response](https://www.interpol.int/Crimes/Cybercrime/Cybercrime-threat-response)
+- [NCSC Threat Reports](https://www.ncsc.gov.uk/section/keep-up-to-date/threat-reports?q=&defaultTypes=report&sort=date%2Bdesc)
+- SentinelLabs: [Crimeware](https://www.sentinelone.com/labs/category/crimeware/) and [Security Intelligence](https://www.sentinelone.com/labs/category/security-intelligence/)
+
+## Community
+
+- [RedTeamRD.org](https://redteamrd.org) — cybersecurity community in LATAM.
+- [HackConRD.org](https://hackconrd.org) — offensive and defensive security conference.
+- [MC1RANGER](https://github.com/MC1RANGER) — maintaining this repository under a research pseudonym.
+
+## Responsible use
+
+Content is intended for authorized defensive security, education, and research. Validate detections and automation in a controlled environment before production use. References to products, frameworks, or organizations do not imply endorsement.
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/MC1RANGER/Threat-Hunting-Team-THT-/main/THT%20Threat%20Hunting%20Team.png" alt="Threat Hunting Community" width="700">
 </p>
