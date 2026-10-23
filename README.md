@@ -2,7 +2,6 @@
 
 **Cyber Threat Intelligence · Threat Detection Engineering · Threat Hunting**
 
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-Mc1Ranger-blue)](https://www.virustotal.com/gui/user/Mc1Ranger)
 [![Community](https://img.shields.io/badge/Community-RedTeamRD.org-blue.svg)](https://redteamrd.org)
 [![Conference](https://img.shields.io/badge/Event-HackConRD.org-red.svg)](https://hackconrd.org)
 [![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-Reference-orange.svg)](https://attack.mitre.org)
@@ -74,12 +73,12 @@ Corrections, validation results, hunting ideas, and documentation improvements a
 
 - [RedTeamRD.org](https://redteamrd.org) — cybersecurity community in LATAM.
 - [HackConRD.org](https://hackconrd.org) — offensive and defensive security conference.
-- [MC1RANGER](https://github.com/MC1RANGER) — maintaining this repository under a research pseudonym.
+- [RM-ReactorHunt](https://github.com/RM-ReactorHunt) — maintaining this repository under a research pseudonym.
 
 ## Responsible use
 
 Content is intended for authorized defensive security, education, and research. Validate detections and automation in a controlled environment before production use. References to products, frameworks, or organizations do not imply endorsement.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MC1RANGER/Threat-Hunting-Team-THT-/main/THT%20Threat%20Hunting%20Team.png" alt="Threat Hunting Community" width="700">
+  <img src="https://raw.githubusercontent.com/RM-ReactorHunt/Threat-Hunting-Team-THT-/main/THT%20Threat%20Hunting%20Team.png" alt="Threat Hunting Community" width="700">
 </p>
